@@ -28,7 +28,7 @@ body header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url("../images/paper-flower-background-4881104_1920.jpg");
+  background-image: url("../images/300.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -102,6 +102,7 @@ body header .scroll:hover {
         grid-template-columns: repeat(3, auto);
     -ms-grid-rows: (1fr)[3];
         grid-template-rows: repeat(3, 1fr);
+    background-image: url("../images/paper-flower-background-4881104_1920.jpg");
   }
   body header .box {
     -ms-grid-column: 2;
@@ -130,7 +131,7 @@ body header .scroll:hover {
 }
 
 .change {
-  background-image: url("../images/black-370118_1280.png");
+  background-image: url("../images/black.png");
 }
 
 .lightTheme {

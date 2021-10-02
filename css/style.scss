@@ -17,7 +17,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: url('../images/paper-flower-background-4881104_1920.jpg');
+    background-image: url('../images/300.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -80,6 +80,7 @@ body {
       display: grid;
       grid-template-columns: repeat(3, auto);
       grid-template-rows: repeat(3, 1fr);
+      background-image: url('../images/paper-flower-background-4881104_1920.jpg');
       .box {
         grid-column: 2/3;
         grid-row: 2/3;
@@ -105,7 +106,7 @@ body {
 }
 
 .change {
-  background-image: url('../images/black-370118_1280.png');
+  background-image: url('../images/black.png');
 }
 
 .lightTheme {
