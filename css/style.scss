@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --global: black;
+  --firstChild: hsla(0, 0%, 30%, 0.9);
+  --h2p: hsla(0, 0%, 20%, 0.795);
+  --h1: hsl(0, 0%, 9%);
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('../images/paper-flower-background-4881104_1920.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-left: 20px;
+    .light {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      text-decoration: none;
+      text-transform: capitalize;
+      color: var(--global);
+      font-weight: bolder;
+    }
+    p:first-child {
+      color: var(--firstChild);
+      margin-bottom: 10px;
+    }
+    h2 + p {
+      margin: 10px 0;
+      color: var(--h2p);
+    }
+    h1 {
+      color: var(--h1);
+      line-height: 1;
+      span {
+        display: block;
+        color: hsla(0, 0%, 20%, 0.911);
+        color: var(--global);
+        text-shadow: 1px 1px 1px hsla(0, 0%, 0%, 0.8);
+      }
+    }
+    h2 {
+      color: hsl(0, 0%, 9%);
+      color: var(--global);
+      margin-top: 10px;
+    }
+    .scroll {
+      color: hsla(0, 0%, 20%, 0.795);
+      color: var(--global);
+      padding: 5px 20px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      font-family: 'Courier New', Courier, monospace;
+      transition: all 0.3s ease;
+      font-weight: bolder;
+      box-shadow: 1px 1px 1px hsla(0, 0%, 20%, 0.795);
+      border-radius: 3px;
+      &:hover {
+        color: hsl(0, 0%, 9%);
+        background: hsla(0, 0%, 20%, 0.1);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 500px) {
+  body {
+    header {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      grid-template-rows: repeat(3, 1fr);
+      .box {
+        grid-column: 2/3;
+        grid-row: 2/3;
+      }
+      p:first-child {
+        font-size: 1.2rem;
+      }
+      h1 {
+        font-size: 2.8rem;
+        span {
+          display: inline;
+        }
+      }
+      h2 + p {
+        font-size: 1.1rem;
+      }
+      a {
+        display: inline-block;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+.change {
+  background-image: url('../images/black-370118_1280.png');
+}
+
+.lightTheme {
+  color: red !important;
+}

@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --global: black;
+  --firstChild: hsla(0, 0%, 30%, 0.9);
+  --h2p: hsla(0, 0%, 20%, 0.795);
+  --h1: hsl(0, 0%, 9%);
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body header {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url("../images/paper-flower-background-4881104_1920.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-left: 20px;
+}
+
+body header .light {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--global);
+  font-weight: bolder;
+}
+
+body header p:first-child {
+  color: var(--firstChild);
+  margin-bottom: 10px;
+}
+
+body header h2 + p {
+  margin: 10px 0;
+  color: var(--h2p);
+}
+
+body header h1 {
+  color: var(--h1);
+  line-height: 1;
+}
+
+body header h1 span {
+  display: block;
+  color: rgba(51, 51, 51, 0.911);
+  color: var(--global);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+body header h2 {
+  color: #171717;
+  color: var(--global);
+  margin-top: 10px;
+}
+
+body header .scroll {
+  color: rgba(51, 51, 51, 0.795);
+  color: var(--global);
+  padding: 5px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-family: 'Courier New', Courier, monospace;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  font-weight: bolder;
+  -webkit-box-shadow: 1px 1px 1px rgba(51, 51, 51, 0.795);
+          box-shadow: 1px 1px 1px rgba(51, 51, 51, 0.795);
+  border-radius: 3px;
+}
+
+body header .scroll:hover {
+  color: #171717;
+  background: rgba(51, 51, 51, 0.1);
+}
+
+@media screen and (min-width: 500px) {
+  body header {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[3];
+        grid-template-columns: repeat(3, auto);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+  }
+  body header .box {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+  body header p:first-child {
+    font-size: 1.2rem;
+  }
+  body header h1 {
+    font-size: 2.8rem;
+  }
+  body header h1 span {
+    display: inline;
+  }
+  body header h2 + p {
+    font-size: 1.1rem;
+  }
+  body header a {
+    display: inline-block;
+    margin-top: 10px;
+  }
+}
+
+.change {
+  background-image: url("../images/black-370118_1280.png");
+}
+
+.lightTheme {
+  color: red !important;
+}
+/*# sourceMappingURL=style.css.map */
