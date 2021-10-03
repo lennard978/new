@@ -14,6 +14,7 @@ body {
   --scrollDark: hsla(0, 0%, 20%, 0.795);
   --background-image: url('../images/600.jpg');
   --background-screen: url('../images/paper-flower-background-4881104_1920.jpg');
+  --main-image: url('../images/main-600.png');
 }
 
 body.dark-theme {
@@ -27,6 +28,7 @@ body.dark-theme {
   --scrollDark: white;
   --background-image: black;
   --background-screen: black;
+  --main-image: black;
 }
 
 body {
@@ -84,6 +86,48 @@ body {
       }
     }
   }
+
+  main{
+    color: var(--global-dark);
+    background: var(--main-image);
+    h2{
+      margin-left: 20px;
+      padding: 5px 0;
+    }
+    .main-title{
+      padding: 30px 0;
+      h2{
+        text-align: center;
+        margin-left: 0;
+      }
+      p{
+        text-align: center;
+      }
+    }
+
+    .technologies{
+      display: flex;
+      flex-direction: column;
+      ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 5px;
+        padding: 10px;
+        list-style-type: none;
+        li{
+          a{
+            text-decoration: none;
+            display: block;
+            padding: 5px 20px;
+            // border-radius: 5px;
+            color: var(--global-dark);
+            border: 2px double var(--global-dark);
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 500px) {
@@ -111,6 +155,20 @@ body {
       a {
         display: inline-block;
         margin-top: 10px;
+      }
+    }
+    main{
+      .technologies{
+        ul{
+          display: grid;
+          grid-template-columns: repeat(3, auto);
+          grid-template-rows: 2fr;
+          li{
+            a{
+              text-align: center;
+            }
+          }
+        }
       }
     }
   }

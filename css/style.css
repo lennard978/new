@@ -16,6 +16,7 @@ body {
   --scrollDark: hsla(0, 0%, 20%, 0.795);
   --background-image: url('../images/600.jpg');
   --background-screen: url('../images/paper-flower-background-4881104_1920.jpg');
+  --main-image: url('../images/main-600.png');
 }
 
 body.dark-theme {
@@ -29,6 +30,7 @@ body.dark-theme {
   --scrollDark: white;
   --background-image: black;
   --background-screen: black;
+  --main-image: black;
 }
 
 body {
@@ -105,6 +107,61 @@ body header .scroll:hover {
           box-shadow: 1px 1px 1px var(--global-light);
 }
 
+body main {
+  color: var(--global-dark);
+  background: var(--main-image);
+}
+
+body main h2 {
+  margin-left: 20px;
+  padding: 5px 0;
+}
+
+body main .main-title {
+  padding: 30px 0;
+}
+
+body main .main-title h2 {
+  text-align: center;
+  margin-left: 0;
+}
+
+body main .main-title p {
+  text-align: center;
+}
+
+body main .technologies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main .technologies ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: 5px;
+  padding: 10px;
+  list-style-type: none;
+}
+
+body main .technologies ul li a {
+  text-decoration: none;
+  display: block;
+  padding: 5px 20px;
+  color: var(--global-dark);
+  border: 2px double var(--global-dark);
+}
+
 @media screen and (min-width: 500px) {
   body header {
     display: -ms-grid;
@@ -137,6 +194,17 @@ body header .scroll:hover {
   body header a {
     display: inline-block;
     margin-top: 10px;
+  }
+  body main .technologies ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[3];
+        grid-template-columns: repeat(3, auto);
+    -ms-grid-rows: 2fr;
+        grid-template-rows: 2fr;
+  }
+  body main .technologies ul li a {
+    text-align: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
