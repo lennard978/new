@@ -14,6 +14,8 @@ body {
   --textShadowDark: hsla(0, 0%, 0%, 0.8);
   --spanDarkColor: hsla(0, 0%, 20%, 0.911);
   --scrollDark: hsla(0, 0%, 20%, 0.795);
+  --background-image: url('../images/600.jpg');
+  --background-screen: url('../images/paper-flower-background-4881104_1920.jpg');
 }
 
 body.dark-theme {
@@ -25,6 +27,8 @@ body.dark-theme {
   --shadow: white;
   --spanDarkColor: white;
   --scrollDark: white;
+  --background-image: black;
+  --background-screen: black;
 }
 
 body {
@@ -43,7 +47,7 @@ body header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url("../images/600.jpg");
+  background: var(--background-image);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -109,7 +113,9 @@ body header .scroll:hover {
         grid-template-columns: repeat(3, auto);
     -ms-grid-rows: (1fr)[3];
         grid-template-rows: repeat(3, 1fr);
-    background-image: url("../images/paper-flower-background-4881104_1920.jpg");
+    background: var(--background-screen);
+    background-position: center;
+    background-size: cover;
   }
   body header .box {
     -ms-grid-column: 2;
