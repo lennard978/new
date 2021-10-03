@@ -1,25 +1,18 @@
 {
-    //...
+  "[javascript]": {
+    "editor.defaultFormatter": null
+  },
+  "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "[javascript]": {
-        "editor.defaultFormatter": null
-    },
-    "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": true
-    },
-    "eslint.probe": ["javascript", "javascriptreact", "vue"],
-    // "eslint.alwaysShowStatus": true,
-    "editor.formatOnSave": true,
-    "[javascript, javascriptreact]": {
-        "editor.formatOnSave": false
-    },
-    // Runs Prettier, then ESLint
-    "editor.codeActionsOnSave": [
-        "source.formatDocument",
-        "source.fixAll.eslint"
-    ],
+    "editor.formatOnSave": false
+  },
+  "eslint.probe": ["javascript", "javascriptreact", "vue"],
+  "[javascript, javascriptreact]": {
+    "editor.formatOnSave": false
+  },
+  // Runs Prettier, then ESLint
+  "editor.codeActionsOnSave": ["source.formatDocument", "source.fixAll.eslint"],
 
-    "vetur.validation.template": false
-    // ...
+  "vetur.validation.template": false
+  // ...
 }

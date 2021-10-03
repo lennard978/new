@@ -21,23 +21,11 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    padding-left: 20px;
-    .light {
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      text-decoration: none;
-      text-transform: capitalize;
-      color: var(--global);
-      font-weight: bolder;
-    }
-    p:first-child {
-      color: var(--firstChild);
-      margin-bottom: 10px;
-    }
-    h2 + p {
+    padding: 0 20px;
+    p {
       margin: 10px 0;
-      color: var(--h2p);
+      padding-right: 10px;
+      color: var(--firstChild);
     }
     h1 {
       color: var(--h1);
@@ -85,7 +73,7 @@ body {
         grid-column: 2/3;
         grid-row: 2/3;
       }
-      p:first-child {
+      p{
         font-size: 1.2rem;
       }
       h1 {
@@ -94,21 +82,10 @@ body {
           display: inline;
         }
       }
-      h2 + p {
-        font-size: 1.1rem;
-      }
       a {
         display: inline-block;
         margin-top: 10px;
       }
     }
   }
-}
-
-.change {
-  background-image: url('../images/black.png');
-}
-
-.lightTheme {
-  color: red !important;
 }

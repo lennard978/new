@@ -32,27 +32,13 @@ body header {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  padding-left: 20px;
+  padding: 0 20px;
 }
 
-body header .light {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  text-decoration: none;
-  text-transform: capitalize;
-  color: var(--global);
-  font-weight: bolder;
-}
-
-body header p:first-child {
-  color: var(--firstChild);
-  margin-bottom: 10px;
-}
-
-body header h2 + p {
+body header p {
   margin: 10px 0;
-  color: var(--h2p);
+  padding-right: 10px;
+  color: var(--firstChild);
 }
 
 body header h1 {
@@ -112,7 +98,7 @@ body header .scroll:hover {
     -ms-grid-row-span: 1;
     grid-row: 2/3;
   }
-  body header p:first-child {
+  body header p {
     font-size: 1.2rem;
   }
   body header h1 {
@@ -121,20 +107,9 @@ body header .scroll:hover {
   body header h1 span {
     display: inline;
   }
-  body header h2 + p {
-    font-size: 1.1rem;
-  }
   body header a {
     display: inline-block;
     margin-top: 10px;
   }
-}
-
-.change {
-  background-image: url("../images/black.png");
-}
-
-.lightTheme {
-  color: red !important;
 }
 /*# sourceMappingURL=style.css.map */
