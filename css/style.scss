@@ -3,11 +3,26 @@
   padding: 0;
   box-sizing: border-box;
 }
-:root {
-  --global: black;
-  --firstChild: hsla(0, 0%, 30%, 0.9);
-  --h2p: hsla(0, 0%, 20%, 0.795);
-  --h1: hsl(0, 0%, 9%);
+body {
+  --global-dark: black;
+  --paragraph-lightColor: hsla(0, 0%, 30%, 0.9);
+  --btn-background: hsla(0, 0%, 99%, 0);
+  --h2DarkColor: hsl(0, 1%, 14%);
+  --h1DarkColor: hsl(0, 0%, 9%);
+  --textShadowDark: hsla(0, 0%, 0%, 0.8);
+  --spanDarkColor: hsla(0, 0%, 20%, 0.911);
+  --scrollDark: hsla(0, 0%, 20%, 0.795);
+}
+
+body.dark-theme {
+  --global-dark: hsl(0, 20%, 99%);
+  --paragraph-lightColor: hsl(0, 0%, 99%);
+  --btn-background: hsl(0, 0%, 89%);
+  --h2DarkColor: hsl(0, 0%, 91%);
+  --h1DarkColor: hsl(0, 3%, 85%);
+  --shadow: white;
+  --spanDarkColor: white;
+  --scrollDark: white;
 }
 
 body {
@@ -17,46 +32,51 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: url('../images/300.png');
+    background-image: url('../images/600.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     padding: 0 20px;
+    .changeMode{
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      text-decoration: none;
+      text-transform: capitalize;
+      color: var(--global-dark);
+      font-weight: bolder;
+    }
     p {
       margin: 10px 0;
       padding-right: 10px;
-      color: var(--firstChild);
+      color: var(--paragraph-lightColor);
     }
     h1 {
-      color: var(--h1);
       line-height: 1;
-      span {
-        display: block;
-        color: hsla(0, 0%, 20%, 0.911);
-        color: var(--global);
-        text-shadow: 1px 1px 1px hsla(0, 0%, 0%, 0.8);
-      }
+      color: var(--h1DarkColor);
+      text-shadow: 1px 1px 1px var(--textShadowDark);
     }
     h2 {
-      color: hsl(0, 0%, 9%);
-      color: var(--global);
+      color: var(--h2DarkColor);
       margin-top: 10px;
     }
     .scroll {
-      color: hsla(0, 0%, 20%, 0.795);
-      color: var(--global);
+      color: var(--scrollDark);
       padding: 5px 20px;
+      display: inline-block;
+      margin-top: 20px;
       text-decoration: none;
       text-transform: uppercase;
       font-size: 0.9rem;
       font-family: 'Courier New', Courier, monospace;
       transition: all 0.3s ease;
       font-weight: bolder;
-      box-shadow: 1px 1px 1px hsla(0, 0%, 20%, 0.795);
+      box-shadow: 1px 1px 1px var(--paragraph-lightColor);
       border-radius: 3px;
       &:hover {
-        color: hsl(0, 0%, 9%);
-        background: hsla(0, 0%, 20%, 0.1);
+        color: var(--global-light);
+        background: var(--btn-background);
+        box-shadow: 1px 1px 1px var(--global-light);
       }
     }
   }

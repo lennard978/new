@@ -1,34 +1,21 @@
-// const lightBtn = document.querySelector(".light");
-// const header = document.querySelector("header");
-// var r = document.querySelector(":root");
+// Select the button
+const btn = document.querySelector(".changeMode");
+const body = document.querySelector("body");
+const header = document.querySelector("header");
 
-// // function myFunction_get() {
-// //   var rs = getComputedStyle(r);
-// //   console.log(rs.getPropertyValue("--global"));
-// // }
-// function light() {
-//   r.style.setProperty("--global", "white");
-//   r.style.setProperty("--firstChild", "white");
-//   r.style.setProperty("--h2p", "white");
-//   r.style.setProperty("--h1", "white");
-// }
-// function dark() {
-//   r.style.setProperty("--global", "black");
-//   r.style.setProperty("--firstChild", "hsla(0, 0%, 30%, 0.9)");
-//   r.style.setProperty("--h2p", "hsla(0, 0%, 20%, 0.795)");
-//   r.style.setProperty("--h1", "hsl(0, 0%, 9%)");
-// }
-
-// lightBtn.addEventListener("click", function () {
-//   header.classList.toggle("change");
-
-//   if (header.classList.contains("change")) {
-//     lightBtn.textContent = "dark";
-//     lightBtn.style.color = "white";
-//     light();
-//   } else {
-//     lightBtn.textContent = "light";
-//     lightBtn.style.color = "black";
-//     dark();
-//   }
-// });
+// btn.textContent = "light";
+// Listen for a click on the button
+btn.addEventListener("click", function() {
+  // Then toggle (add/remove) the .dark-theme class to the body
+  document.body.classList.toggle("dark-theme");
+  if (body.classList.contains("dark-theme")) {
+    btn.textContent = "dark";
+    btn.style.color = "white";
+    header.style.backgroundImage = "none";
+    header.style.backgroundColor = "black";
+  } else {
+    btn.textContent = "light";
+    btn.style.color = "black";
+    header.style.backgroundImage = "url(\"../images/paper-flower-background-4881104_1920.jpg\")";
+  }
+});
