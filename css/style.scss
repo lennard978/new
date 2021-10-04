@@ -111,23 +111,61 @@ body {
         text-align: center;
       }
     }
+    .languages{
+      .lang-list{
+        list-style-type: none;
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-evenly;
+        li{
+          font-weight: bolder;
+          text-transform: uppercase;
+          span{
+            color: var(--paragraph-lightColor);
+          }
+        }
+      }
+    }
     .technologies{
       display: flex;
       flex-direction: column;
+      .content{
+        padding: 20px 0;
+      }
     }
     .online{
       display: flex;
       flex-direction: column;
+      .content {
+        padding: 20px 0;
+        ul{
+          
+          li{
+            &:first-child{
+              color: rgb(100, 100, 255);
+            }
+            &:last-child{
+              color: rgb(34, 34, 34);
+            }
+            a{
+              text-decoration: none;
+              color: var(--paragraph-lightColor);
+              font-weight: bolder;
+            }
+          }
+        }
+      }
     }
   }
   .title{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    .fa-plus {
-      margin-right: 20px;
-      margin-left: auto;
-    }
+    padding-left: 10px;
+    // .fa-plus {
+    //   // margin-right: 20px;
+    //   // margin-left: auto;
+    // }
   }
 }
 
@@ -156,11 +194,26 @@ body {
       }
     }
     main{
+      display: grid;
+      grid-template-columns: 100px 1fr 100px;
+      .main-title{
+        grid-column: 2/3;
+      }
+      .education{
+        grid-column: 2/3;
+      }
+      .experience{
+        grid-column: 2/3;
+      }
+      .languages{
+        grid-column: 2/3;
+      }
       .technologies{
+        grid-column: 2/3;
         ul{
           display: grid;
-          grid-template-columns: repeat(3, auto);
-          grid-template-rows: 2fr;
+          grid-template-columns: repeat(4, auto);
+          grid-template-rows: auto;
           li{
             a{
               text-align: center;
@@ -168,13 +221,21 @@ body {
           }
         }
       }
+      .philosophy{
+        grid-column: 2/3;
+      }
+      .passion{
+        grid-column: 2/3;
+      }
     }
   }
 }
 
 .content{
-  border-bottom: 2px solid #000;
-  display: block;
+  // border-bottom: 2px solid #000;
+  display: none;
+  border-top: 2px solid var(--paragraph-lightColor);
+  border-bottom: 2px solid var(--paragraph-lightColor);
   ul{
     display: flex;
     flex-wrap: wrap;
@@ -188,7 +249,8 @@ body {
         display: block;
         text-align: center;
         padding: 5px 20px;
-        color: var(--global-dark);
+        color: var(--paragraph-lightColor);
+        font-weight: bolder;
         border: 1px solid var(--paragraph-lightColor);
         box-shadow: 1px 1px 1px var(--paragraph-lightColor);
         border-radius: 3px;
@@ -197,6 +259,6 @@ body {
   }
 }
 
-.closeTab{
-  display: none;
+.active{
+  display: block;
 }
