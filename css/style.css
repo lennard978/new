@@ -45,7 +45,6 @@ body .bg {
   height: 100vh;
   width: 100vw;
   position: fixed;
-  /* z-index usage is up to you.. although there is no need of using it because the default stack context will work. */
   z-index: -1;
 }
 
@@ -148,26 +147,31 @@ body main .technologies {
           flex-direction: column;
 }
 
-body main .technologies ul {
+body main .online {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  gap: 5px;
-  padding: 10px;
-  list-style-type: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-body main .technologies ul li a {
-  text-decoration: none;
-  display: block;
-  padding: 5px 20px;
-  color: var(--global-dark);
-  border: 2px double var(--global-dark);
+body .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .title .fa-plus {
+  margin-right: 20px;
+  margin-left: auto;
 }
 
 @media screen and (min-width: 500px) {
@@ -211,5 +215,40 @@ body main .technologies ul li a {
   body main .technologies ul li a {
     text-align: center;
   }
+}
+
+.content {
+  border-bottom: 2px solid #000;
+  display: block;
+}
+
+.content ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: 5px;
+  padding: 10px;
+  list-style-type: none;
+}
+
+.content ul li p {
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  padding: 5px 20px;
+  color: var(--global-dark);
+  border: 1px solid var(--paragraph-lightColor);
+  -webkit-box-shadow: 1px 1px 1px var(--paragraph-lightColor);
+          box-shadow: 1px 1px 1px var(--paragraph-lightColor);
+  border-radius: 3px;
+}
+
+.closeTab {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
