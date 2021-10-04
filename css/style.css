@@ -122,7 +122,6 @@ body header .scroll:hover {
 
 body main {
   color: var(--global-dark);
-  background: var(--main-image);
 }
 
 body main h2 {
@@ -183,10 +182,6 @@ body main .technologies ul li a {
         grid-template-columns: repeat(3, auto);
     -ms-grid-rows: (1fr)[3];
         grid-template-rows: repeat(3, 1fr);
-    background: var(--background-screen);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
   }
   body header .box {
     -ms-grid-column: 2;

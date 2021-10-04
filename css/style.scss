@@ -102,7 +102,7 @@ body {
 
   main{
     color: var(--global-dark);
-    background: var(--main-image);
+    // background: var(--main-image);
     h2{
       margin-left: 20px;
       padding: 5px 0;
@@ -150,10 +150,10 @@ body {
       display: grid;
       grid-template-columns: repeat(3, auto);
       grid-template-rows: repeat(3, 1fr);
-      background: var(--background-screen);
-      background-position: center;
-      background-size: cover;
-      background-attachment: fixed;
+      // background: var(--background-screen);
+      // background-position: center;
+      // background-size: cover;
+      // background-attachment: fixed;
       .box {
         grid-column: 2/3;
         grid-row: 2/3;
