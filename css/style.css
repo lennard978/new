@@ -37,8 +37,22 @@ body {
   font-family: 'Courier New', Courier, monospace;
 }
 
+body .bg {
+  background: linear-gradient(335deg, #ff8c6b 0%, #ffe4a8 100%);
+  background: var(--background-screen);
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  /* z-index usage is up to you.. although there is no need of using it because the default stack context will work. */
+  z-index: -1;
+}
+
 body header {
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,7 +63,6 @@ body header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: var(--background-image);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -173,6 +186,7 @@ body main .technologies ul li a {
     background: var(--background-screen);
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
   }
   body header .box {
     -ms-grid-column: 2;
