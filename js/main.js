@@ -19,3 +19,12 @@ btn.addEventListener("click", function() {
 let vh = window.innerHeight * 0.01;
 // Then we set the value in the --vh custom property to the root of the document
 document.documentElement.style.setProperty("--vh", `${vh}px`);
+
+const openBtn = document.querySelectorAll(".open");
+
+openBtn.forEach(element => {
+  element.addEventListener("click", function(){
+    const element2 = element.closest("section");
+    element2.querySelector(".content").classList.toggle("active");
+  });
+});
