@@ -15,7 +15,7 @@ body {
   --h1DarkColor: hsl(0, 0%, 9%);
   --textShadowDark: hsla(0, 0%, 0%, 0.8);
   --spanDarkColor: hsla(0, 0%, 20%, 0.911);
-  --scrollDark: hsla(0, 0%, 20%, 0.795);
+  --scrollDark: hsla(0, 0%, 20%, 0.395);
   --background-image: url('../images/600.jpg');
   --background-screen: url('../images/paper-flower-background-4881104_1920.jpg');
   --main-image: url('../images/main-600.png');
@@ -140,6 +140,71 @@ body main .main-title p {
   text-align: center;
 }
 
+body main .education .content {
+  max-height: 0vh;
+  overflow: hidden;
+  -webkit-transition: max-height 0.3s ease;
+  transition: max-height 0.3s ease;
+}
+
+body main .certificates .certificates-list {
+  list-style-type: none;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main .certificates .certificates-list li {
+  text-align: center;
+}
+
+body main .certificates .certificates-list li p {
+  margin-bottom: 5px;
+  font-weight: bolder;
+}
+
+body main .certificates .certificates-list li a {
+  display: inline-block;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: var(--paragraph-lightColor);
+  -webkit-box-shadow: 1px 1px 4px var(--paragraph-lightColor);
+          box-shadow: 1px 1px 4px var(--paragraph-lightColor);
+  border-radius: 3px;
+}
+
+body main .certificates .certificates-list li a:hover {
+  color: var(--global-dark);
+}
+
+body main .certificates .content {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.3s ease;
+  transition: max-height 0.3s ease;
+}
+
+body main .experience .content {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.3s ease;
+  transition: max-height 0.3s ease;
+}
+
+body main .languages .content {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.3s ease;
+  transition: max-height 0.3s ease;
+}
+
 body main .languages .content .lang-list {
   list-style-type: none;
   display: -webkit-box;
@@ -193,7 +258,10 @@ body main .technologies {
 }
 
 body main .technologies .content {
-  padding: 20px 0;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.3s ease;
+  transition: max-height 0.3s ease;
 }
 
 body main .technologies .content ul {
@@ -239,21 +307,45 @@ body main .online {
 }
 
 body main .online .content {
-  padding: 20px 0;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.3s ease;
+  transition: max-height 0.3s ease;
+}
+
+body main .online .content ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 body main .online .content ul li:first-child {
   color: #6464ff;
+  margin-left: 10px;
+  padding: 10px;
 }
 
 body main .online .content ul li:last-child {
   color: #222222;
+  margin-right: 10px;
+  padding: 10px;
 }
 
 body main .online .content ul li a {
   text-decoration: none;
   color: var(--paragraph-lightColor);
   font-weight: bolder;
+}
+
+body main .philosophy .content {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.3s ease;
+  transition: max-height 0.3s ease;
 }
 
 body main .philosophy figure blockquote {
@@ -293,6 +385,13 @@ body main .philosophy figure figcaption q {
   font-style: italic;
   margin-right: 10px;
   padding-bottom: 10px;
+}
+
+body main .passion .content {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.3s ease;
+  transition: max-height 0.3s ease;
 }
 
 body main .passion .lang-list {
@@ -345,11 +444,21 @@ body .title {
   padding-left: 10px;
 }
 
+body .title .fa-minus {
+  margin-right: 20px;
+  margin-left: auto;
+  background-color: var(--global-dark);
+  color: var(--global-light);
+  border-radius: 50%;
+  padding: 5px;
+}
+
 body .title .fa-plus {
   margin-right: 20px;
   margin-left: auto;
   background-color: var(--global-dark);
   color: var(--global-light);
+  border-radius: 50%;
   padding: 5px;
 }
 
@@ -414,6 +523,11 @@ body footer {
     -ms-grid-column-span: 1;
     grid-column: 2/3;
   }
+  body main .certificates {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
   body main .experience {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
@@ -457,11 +571,9 @@ body footer {
   }
 }
 
-.content {
-  display: block;
-}
-
-.active {
-  display: none;
+.slide {
+  -webkit-transition: max-height 0.3s ease;
+  transition: max-height 0.3s ease;
+  max-height: 100vh !important;
 }
 /*# sourceMappingURL=style.css.map */

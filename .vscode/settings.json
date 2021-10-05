@@ -2,10 +2,10 @@
   "[javascript]": {
     "editor.defaultFormatter": null
   },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
-  },
+  // "[html]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  //   "editor.formatOnSave": true
+  // },
   "eslint.probe": ["javascript", "javascriptreact", "vue"],
   "[javascript, javascriptreact]": {
     "editor.formatOnSave": false
@@ -13,6 +13,8 @@
   // Runs Prettier, then ESLint
   "editor.codeActionsOnSave": ["source.formatDocument", "source.fixAll.eslint"],
 
-  "vetur.validation.template": false
+  "vetur.validation.template": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true
   // ...
 }

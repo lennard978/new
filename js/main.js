@@ -25,6 +25,13 @@ const openBtn = document.querySelectorAll(".open");
 openBtn.forEach(element => {
   element.addEventListener("click", function(){
     const element2 = element.closest("section");
-    element2.querySelector(".content").classList.toggle("active");
+    if(element.classList.contains("fa-plus")){
+      element.classList.remove("fa-plus");
+      element.classList.add("fa-minus");
+    } else {
+      element.classList.remove("fa-minus");
+      element.classList.add("fa-plus");
+    }
+    element2.querySelector(".content").classList.toggle("slide");
   });
 });
