@@ -117,26 +117,26 @@ body {
       .content{
         .lang-list{
           list-style-type: none;
-          padding: 20px 0;
           display: flex;
-          justify-content: flex-start;
+          flex-direction: column;
+          justify-content: space-between;
           li{
-            font-weight: bolder;
-            text-transform: uppercase;
             display: flex;
-          flex-wrap: wrap;
-          justify-content: space-evenly;
-          gap: 5px;
-          padding: 10px;
-          list-style-type: none;
+            justify-content: space-between;
+            padding: 5px 0;
+            border-bottom: 1px solid #000;
           p{
             text-decoration: none;
             display: block;
             padding: 5px 20px;
-            color: var(--paragraph-lightColor);
+            color: var(--global-dark);
             font-weight: bolder;
             span{
               color: var(--paragraph-lightColor);
+            }
+            &:last-child{
+              color: var(--paragraph-lightColor);
+              font-style: italic;
             }
           }
           }
@@ -156,6 +156,10 @@ body {
           padding: 10px;
           list-style-type: none;
           li{
+            i{
+              color: var(--global-dark);
+              font-size: 20px;
+            }
             p{
               text-decoration: none;
               display: block;

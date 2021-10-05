@@ -141,41 +141,44 @@ body main .main-title p {
 
 body main .languages .content .lang-list {
   list-style-type: none;
-  padding: 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 body main .languages .content .lang-list li {
-  font-weight: bolder;
-  text-transform: uppercase;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  gap: 5px;
-  padding: 10px;
-  list-style-type: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px 0;
+  border-bottom: 1px solid #000;
 }
 
 body main .languages .content .lang-list li p {
   text-decoration: none;
   display: block;
   padding: 5px 20px;
-  color: var(--paragraph-lightColor);
+  color: var(--global-dark);
   font-weight: bolder;
 }
 
 body main .languages .content .lang-list li p span {
   color: var(--paragraph-lightColor);
+}
+
+body main .languages .content .lang-list li p:last-child {
+  color: var(--paragraph-lightColor);
+  font-style: italic;
 }
 
 body main .technologies {
@@ -204,6 +207,11 @@ body main .technologies .content ul {
   gap: 5px;
   padding: 10px;
   list-style-type: none;
+}
+
+body main .technologies .content ul li i {
+  color: var(--global-dark);
+  font-size: 20px;
 }
 
 body main .technologies .content ul li p {
