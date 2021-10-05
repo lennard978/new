@@ -36,6 +36,31 @@ body.dark-theme {
   --main-image: black;
 }
 
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+}
+
 body {
   font-family: 'Courier New', Courier, monospace;
 }
@@ -71,7 +96,6 @@ body header .changeMode {
   position: absolute;
   top: 10px;
   left: 10px;
-  text-decoration: none;
   text-transform: capitalize;
   color: var(--global-dark);
   font-weight: bolder;
@@ -99,7 +123,6 @@ body header .scroll {
   padding: 5px 20px;
   display: inline-block;
   margin-top: 20px;
-  text-decoration: none;
   text-transform: uppercase;
   font-size: 0.9rem;
   font-family: 'Courier New', Courier, monospace;
@@ -148,7 +171,6 @@ body main .education .content {
 }
 
 body main .certificates .certificates-list {
-  list-style-type: none;
   padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -173,7 +195,6 @@ body main .certificates .certificates-list li p {
 body main .certificates .certificates-list li a {
   display: inline-block;
   padding: 5px 10px;
-  text-decoration: none;
   color: var(--paragraph-lightColor);
   -webkit-box-shadow: 1px 1px 4px var(--paragraph-lightColor);
           box-shadow: 1px 1px 4px var(--paragraph-lightColor);
@@ -185,28 +206,27 @@ body main .certificates .certificates-list li a:hover {
 }
 
 body main .certificates .content {
-  max-height: 0;
+  max-height: 0vh;
   overflow: hidden;
   -webkit-transition: max-height 0.3s ease;
   transition: max-height 0.3s ease;
 }
 
 body main .experience .content {
-  max-height: 0;
+  max-height: 0vh;
   overflow: hidden;
   -webkit-transition: max-height 0.3s ease;
   transition: max-height 0.3s ease;
 }
 
 body main .languages .content {
-  max-height: 0;
+  max-height: 0vh;
   overflow: hidden;
   -webkit-transition: max-height 0.3s ease;
   transition: max-height 0.3s ease;
 }
 
 body main .languages .content .lang-list {
-  list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -231,7 +251,6 @@ body main .languages .content .lang-list li {
 }
 
 body main .languages .content .lang-list li p {
-  text-decoration: none;
   display: block;
   padding: 5px 20px;
   color: var(--global-dark);
@@ -258,7 +277,7 @@ body main .technologies {
 }
 
 body main .technologies .content {
-  max-height: 0;
+  max-height: 0vh;
   overflow: hidden;
   -webkit-transition: max-height 0.3s ease;
   transition: max-height 0.3s ease;
@@ -275,20 +294,18 @@ body main .technologies .content ul {
           justify-content: space-evenly;
   gap: 5px;
   padding: 10px;
-  list-style-type: none;
 }
 
 body main .technologies .content ul li i {
-  color: var(--global-dark);
+  color: var(--paragraph-lightColor);
   font-size: 20px;
 }
 
 body main .technologies .content ul li p {
-  text-decoration: none;
   display: block;
   text-align: center;
   padding: 5px 20px;
-  color: var(--paragraph-lightColor);
+  color: var(--global-dark);
   font-weight: bolder;
   border: 1px solid var(--paragraph-lightColor);
   -webkit-box-shadow: 1px 1px 1px var(--paragraph-lightColor);
@@ -307,14 +324,13 @@ body main .online {
 }
 
 body main .online .content {
-  max-height: 0;
+  max-height: 0vh;
   overflow: hidden;
   -webkit-transition: max-height 0.3s ease;
   transition: max-height 0.3s ease;
 }
 
 body main .online .content ul {
-  list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -324,25 +340,24 @@ body main .online .content ul {
 }
 
 body main .online .content ul li:first-child {
-  color: #6464ff;
+  color: var(--global-dark);
   margin-left: 10px;
   padding: 10px;
 }
 
 body main .online .content ul li:last-child {
-  color: #222222;
+  color: var(--global-dark);
   margin-right: 10px;
   padding: 10px;
 }
 
 body main .online .content ul li a {
-  text-decoration: none;
   color: var(--paragraph-lightColor);
   font-weight: bolder;
 }
 
 body main .philosophy .content {
-  max-height: 0;
+  max-height: 0vh;
   overflow: hidden;
   -webkit-transition: max-height 0.3s ease;
   transition: max-height 0.3s ease;
@@ -388,21 +403,16 @@ body main .philosophy figure figcaption q {
 }
 
 body main .passion .content {
-  max-height: 0;
+  max-height: 0vh;
   overflow: hidden;
   -webkit-transition: max-height 0.3s ease;
   transition: max-height 0.3s ease;
 }
 
 body main .passion .lang-list {
-  list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -416,11 +426,9 @@ body main .passion .lang-list li {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 5px 0;
-  border-bottom: 1px solid #000;
 }
 
 body main .passion .lang-list li p {
-  text-decoration: none;
   display: block;
   padding: 5px 20px;
   color: var(--global-dark);
@@ -441,7 +449,15 @@ body .title {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 10px;
+  padding-left: 1px;
+}
+
+body .title:first-child {
+  margin-left: 10px;
+}
+
+body .title h2 {
+  margin-left: 10px;
 }
 
 body .title .fa-minus {
