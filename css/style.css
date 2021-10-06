@@ -561,25 +561,65 @@ body footer {
     -ms-grid-column-span: 1;
     grid-column: 2/3;
   }
+  body main .education .title {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body main .education .content {
+    border-bottom: none;
+  }
   body main .certificates {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
+  }
+  body main .certificates .title {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body main .certificates .content {
+    border-bottom: none;
   }
   body main .experience {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
   }
+  body main .experience .title {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body main .experience .content {
+    border-bottom: none;
+  }
   body main .languages {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
   }
+  body main .languages .title {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body main .languages .content {
+    border-bottom: none;
+  }
   body main .technologies {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
+  }
+  body main .technologies .title {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body main .technologies .content {
+    border-bottom: none;
   }
   body main .technologies ul {
     display: -ms-grid;
@@ -597,15 +637,39 @@ body footer {
     -ms-grid-column-span: 1;
     grid-column: 2/3;
   }
+  body main .online .title {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body main .online .content {
+    border-bottom: none;
+  }
   body main .philosophy {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
   }
+  body main .philosophy .title {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body main .philosophy .content {
+    border-bottom: none;
+  }
   body main .passion {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
+  }
+  body main .passion .title {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body main .passion .content {
+    border-bottom: none;
   }
 }
 
@@ -636,6 +700,9 @@ body footer {
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2/3;
+    border-right: 3px solid var(--global-dark);
+    border-left: 3px solid var(--global-dark);
+    border-top: 3px solid var(--global-dark);
   }
   body main .education .open {
     display: none;
@@ -650,6 +717,8 @@ body footer {
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2/3;
+    border-right: 3px solid var(--global-dark);
+    border-top: 3px solid var(--global-dark);
   }
   body main .certificates .open {
     display: none;
@@ -664,6 +733,9 @@ body footer {
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
     grid-row: 3/4;
+    border-right: 3px solid var(--global-dark);
+    border-left: 3px solid var(--global-dark);
+    border-top: 3px solid var(--global-dark);
   }
   body main .experience .open {
     display: none;
@@ -678,6 +750,8 @@ body footer {
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
     grid-row: 3/4;
+    border-right: 3px solid var(--global-dark);
+    border-top: 3px solid var(--global-dark);
   }
   body main .languages .open {
     display: none;
@@ -692,6 +766,9 @@ body footer {
     -ms-grid-row: 4;
     -ms-grid-row-span: 1;
     grid-row: 4/5;
+    border-right: 3px solid var(--global-dark);
+    border-left: 3px solid var(--global-dark);
+    border-top: 3px solid var(--global-dark);
   }
   body main .technologies .open {
     display: none;
@@ -706,6 +783,8 @@ body footer {
     -ms-grid-row: 4;
     -ms-grid-row-span: 1;
     grid-row: 4/5;
+    border-right: 3px solid var(--global-dark);
+    border-top: 3px solid var(--global-dark);
   }
   body main .online .open {
     display: none;
@@ -730,6 +809,7 @@ body footer {
     -ms-grid-row: 5;
     -ms-grid-row-span: 1;
     grid-row: 5/6;
+    border: 3px solid var(--global-dark);
   }
   body main .philosophy .open {
     display: none;
@@ -744,6 +824,9 @@ body footer {
     -ms-grid-row: 5;
     -ms-grid-row-span: 1;
     grid-row: 5/6;
+    border-right: 3px solid var(--global-dark);
+    border-bottom: 3px solid var(--global-dark);
+    border-top: 3px solid var(--global-dark);
   }
   body main .passion .open {
     display: none;

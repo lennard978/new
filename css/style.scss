@@ -425,18 +425,49 @@ body {
       }
       .education {
         grid-column: 2/3;
+
+        .title {
+          justify-content: center;
+        }
+        .content {
+          border-bottom: none;
+        }
       }
       .certificates {
         grid-column: 2/3;
+        .title {
+          justify-content: center;
+        }
+        .content {
+          border-bottom: none;
+        }
       }
       .experience {
         grid-column: 2/3;
+        .title {
+          justify-content: center;
+        }
+        .content {
+          border-bottom: none;
+        }
       }
       .languages {
         grid-column: 2/3;
+        .title {
+          justify-content: center;
+        }
+        .content {
+          border-bottom: none;
+        }
       }
       .technologies {
         grid-column: 2/3;
+        .title {
+          justify-content: center;
+        }
+        .content {
+          border-bottom: none;
+        }
         ul {
           display: grid;
           grid-template-columns: repeat(4, auto);
@@ -450,12 +481,30 @@ body {
       }
       .online {
         grid-column: 2/3;
+        .title {
+          justify-content: center;
+        }
+        .content {
+          border-bottom: none;
+        }
       }
       .philosophy {
         grid-column: 2/3;
+        .title {
+          justify-content: center;
+        }
+        .content {
+          border-bottom: none;
+        }
       }
       .passion {
         grid-column: 2/3;
+        .title {
+          justify-content: center;
+        }
+        .content {
+          border-bottom: none;
+        }
       }
     }
   }
@@ -478,6 +527,9 @@ body {
       .education {
         grid-column: 2/3;
         grid-row: 2/3;
+        border-right: 3px solid var(--global-dark);
+        border-left: 3px solid var(--global-dark);
+        border-top: 3px solid var(--global-dark);
         .open {
           display: none;
         }
@@ -488,6 +540,8 @@ body {
       .certificates {
         grid-column: 3/4;
         grid-row: 2/3;
+        border-right: 3px solid var(--global-dark);
+        border-top: 3px solid var(--global-dark);
         .open {
           display: none;
         }
@@ -498,6 +552,9 @@ body {
       .experience {
         grid-column: 2/3;
         grid-row: 3/4;
+        border-right: 3px solid var(--global-dark);
+        border-left: 3px solid var(--global-dark);
+        border-top: 3px solid var(--global-dark);
         .open {
           display: none;
         }
@@ -508,6 +565,8 @@ body {
       .languages {
         grid-column: 3/4;
         grid-row: 3/4;
+        border-right: 3px solid var(--global-dark);
+        border-top: 3px solid var(--global-dark);
         .open {
           display: none;
         }
@@ -518,6 +577,9 @@ body {
       .technologies {
         grid-column: 2/3;
         grid-row: 4/5;
+        border-right: 3px solid var(--global-dark);
+        border-left: 3px solid var(--global-dark);
+        border-top: 3px solid var(--global-dark);
         .open {
           display: none;
         }
@@ -528,6 +590,8 @@ body {
       .online {
         grid-column: 3/4;
         grid-row: 4/5;
+        border-right: 3px solid var(--global-dark);
+        border-top: 3px solid var(--global-dark);
         .open {
           display: none;
         }
@@ -544,6 +608,7 @@ body {
       .philosophy {
         grid-column: 2/3;
         grid-row: 5/6;
+        border: 3px solid var(--global-dark);
         .open {
           display: none;
         }
@@ -554,6 +619,9 @@ body {
       .passion {
         grid-column: 3/4;
         grid-row: 5/6;
+        border-right: 3px solid var(--global-dark);
+        border-bottom: 3px solid var(--global-dark);
+        border-top: 3px solid var(--global-dark);
         .open {
           display: none;
         }
