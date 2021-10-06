@@ -62,7 +62,7 @@ a {
 }
 
 body {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 body .bg {
@@ -129,7 +129,6 @@ body header .scroll {
   margin-top: 20px;
   text-transform: uppercase;
   font-size: 0.9rem;
-  font-family: 'Courier New', Courier, monospace;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   font-weight: bolder;
@@ -399,7 +398,6 @@ body main .philosophy figure figcaption {
 
 body main .philosophy figure figcaption q {
   color: var(--global-dark);
-  font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   font-weight: bolder;
   font-style: italic;
@@ -454,19 +452,20 @@ body .title {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 1px;
+  padding: 5px;
 }
 
 body .title:first-child {
   margin-left: 10px;
 }
 
-body .title h2 {
+body .title h3 {
   margin-left: 10px;
 }
 
 body .title .fa-minus {
   margin-right: 20px;
+  font-size: 10px;
   margin-left: auto;
   background-color: var(--global-dark);
   color: var(--global-light);
@@ -477,6 +476,7 @@ body .title .fa-minus {
 
 body .title .fa-plus {
   margin-right: 20px;
+  font-size: 10px;
   margin-left: auto;
   background-color: var(--global-dark);
   color: var(--global-light);
