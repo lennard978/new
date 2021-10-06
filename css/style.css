@@ -120,6 +120,7 @@ body header h1 {
 body header h2 {
   color: var(--h2DarkColor);
   margin-top: 10px;
+  text-align: center;
 }
 
 body header .scroll {
@@ -172,6 +173,8 @@ body main .education .content {
   overflow: hidden;
   -webkit-transition: max-height 0.3s ease;
   transition: max-height 0.3s ease;
+  border-top: 1px solid #858585;
+  border-bottom: 1px solid #858585;
 }
 
 body main .certificates .certificates-list {
@@ -214,6 +217,8 @@ body main .certificates .content {
   overflow: hidden;
   -webkit-transition: max-height 0.3s ease;
   transition: max-height 0.3s ease;
+  border-top: 1px solid #858585;
+  border-bottom: 1px solid #858585;
 }
 
 body main .experience .content {
@@ -221,6 +226,8 @@ body main .experience .content {
   overflow: hidden;
   -webkit-transition: max-height 0.3s ease;
   transition: max-height 0.3s ease;
+  border-top: 1px solid #858585;
+  border-bottom: 1px solid #858585;
 }
 
 body main .languages .content {
@@ -228,6 +235,8 @@ body main .languages .content {
   overflow: hidden;
   -webkit-transition: max-height 0.3s ease;
   transition: max-height 0.3s ease;
+  border-top: 1px solid #858585;
+  border-bottom: 1px solid #858585;
 }
 
 body main .languages .content .lang-list {
@@ -241,6 +250,7 @@ body main .languages .content .lang-list {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 10px 0;
 }
 
 body main .languages .content .lang-list li {
@@ -250,15 +260,14 @@ body main .languages .content .lang-list li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 5px 0;
-  border-bottom: 1px solid #000;
+  padding: 3px;
 }
 
 body main .languages .content .lang-list li p {
   display: block;
-  padding: 5px 20px;
+  padding: 1px 20px;
   color: var(--global-dark);
-  font-weight: bolder;
+  font-weight: 900;
 }
 
 body main .languages .content .lang-list li p span {
@@ -268,6 +277,7 @@ body main .languages .content .lang-list li p span {
 body main .languages .content .lang-list li p:last-child {
   color: var(--paragraph-lightColor);
   font-style: italic;
+  font-weight: 100;
 }
 
 body main .technologies {
@@ -285,6 +295,8 @@ body main .technologies .content {
   overflow: hidden;
   -webkit-transition: max-height 0.3s ease;
   transition: max-height 0.3s ease;
+  border-top: 1px solid #858585;
+  border-bottom: 1px solid #858585;
 }
 
 body main .technologies .content ul {
@@ -332,32 +344,37 @@ body main .online .content {
   overflow: hidden;
   -webkit-transition: max-height 0.3s ease;
   transition: max-height 0.3s ease;
+  border-top: 1px solid #858585;
+  border-bottom: 1px solid #858585;
 }
 
 body main .online .content ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  padding: 10px;
+}
+
+body main .online .content ul li {
+  padding: 3px 20px;
 }
 
 body main .online .content ul li:first-child {
   color: var(--global-dark);
-  margin-left: 10px;
-  padding: 10px;
+  padding-bottom: 10px;
 }
 
 body main .online .content ul li:last-child {
   color: var(--global-dark);
-  margin-right: 10px;
-  padding: 10px;
 }
 
 body main .online .content ul li a {
-  color: var(--paragraph-lightColor);
+  color: var(--global-dark);
   font-weight: bolder;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+body main .online .content ul li a:hover {
+  color: var(--textShadowDark);
+  color: orange;
 }
 
 body main .philosophy .content {
@@ -365,17 +382,19 @@ body main .philosophy .content {
   overflow: hidden;
   -webkit-transition: max-height 0.3s ease;
   transition: max-height 0.3s ease;
+  border-top: 1px solid #858585;
+  border-bottom: 1px solid #858585;
 }
 
 body main .philosophy figure blockquote {
-  border-left: 10px solid #ccc;
+  border-left: 10px solid var(--global-dark);
   margin: 1.5em 10px;
   padding: 0.5em 10px;
   quotes: "“" "”" "‘" "’";
 }
 
 body main .philosophy figure blockquote::before {
-  color: #ccc;
+  color: var(--global-dark);
   content: open-quote;
   font-size: 4em;
   line-height: 0.1em;
@@ -410,15 +429,8 @@ body main .passion .content {
   overflow: hidden;
   -webkit-transition: max-height 0.3s ease;
   transition: max-height 0.3s ease;
-}
-
-body main .passion .lang-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  border-top: 1px solid #858585;
+  border-bottom: 1px solid #858585;
 }
 
 body main .passion .lang-list li {
@@ -433,7 +445,7 @@ body main .passion .lang-list li {
 
 body main .passion .lang-list li p {
   display: block;
-  padding: 5px 20px;
+  padding: 1px 20px;
   color: var(--global-dark);
   font-weight: bolder;
 }
