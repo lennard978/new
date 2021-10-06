@@ -107,7 +107,7 @@ body header .changeMode {
 
 body header p {
   margin: 10px 0;
-  padding-right: 10px;
+  padding-left: 10px;
   color: var(--paragraph-lightColor);
 }
 
@@ -178,7 +178,7 @@ body main .education .content {
 }
 
 body main .certificates .certificates-list {
-  padding: 20px;
+  padding: 20px 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -195,7 +195,7 @@ body main .certificates .certificates-list li {
 }
 
 body main .certificates .certificates-list li p {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   font-weight: bolder;
 }
 
@@ -206,6 +206,7 @@ body main .certificates .certificates-list li a {
   -webkit-box-shadow: 1px 1px 4px var(--paragraph-lightColor);
           box-shadow: 1px 1px 4px var(--paragraph-lightColor);
   border-radius: 3px;
+  font-size: 0.7rem;
 }
 
 body main .certificates .certificates-list li a:hover {
@@ -315,12 +316,14 @@ body main .technologies .content ul {
 body main .technologies .content ul li i {
   color: var(--paragraph-lightColor);
   font-size: 20px;
+  display: block;
 }
 
 body main .technologies .content ul li p {
   display: block;
   text-align: center;
-  padding: 5px 20px;
+  font-size: 0.8rem;
+  padding: 5px 15px;
   color: var(--global-dark);
   font-weight: bolder;
   border: 1px solid var(--paragraph-lightColor);
@@ -464,7 +467,7 @@ body .title {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 5px;
+  padding: 10px 0;
 }
 
 body .title:first-child {
