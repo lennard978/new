@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  --global-dark: #ec631ec9;
+  --global-dark: #e55812;
   --global-light: #fcfcfc;
   --paragraph-lightColor: #e55812;
   --btn-background: #e55812;
@@ -140,6 +140,12 @@ body {
       }
     }
     .education {
+      .title {
+        h2 {
+          text-shadow: 1px 1px 0px rgb(255, 156, 156);
+          font-weight: 900;
+        }
+      }
       .content {
         @include box();
       }

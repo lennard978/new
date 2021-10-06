@@ -7,7 +7,7 @@
 }
 
 body {
-  --global-dark: #ec631ec9;
+  --global-dark: #e55812;
   --global-light: #fcfcfc;
   --paragraph-lightColor: #e55812;
   --btn-background: #e55812;
@@ -166,6 +166,11 @@ body main .main-title h2 {
 
 body main .main-title p {
   text-align: center;
+}
+
+body main .education .title h2 {
+  text-shadow: 1px 1px 0px #ff9c9c;
+  font-weight: 900;
 }
 
 body main .education .content {
