@@ -7,15 +7,15 @@
 }
 
 body {
-  --global-dark: #e55812;
-  --global-light: #fcfcfc;
-  --paragraph-lightColor: #e55812;
-  --btn-background: #e55812;
-  --h2DarkColor: #e55812;
-  --h1DarkColor: #e55812;
-  --textShadowDark: #e55812;
-  --spanDarkColor: #e55812;
-  --scrollDark: #e55812;
+  --global-dark: hsl(0, 0%, 11%);
+  --global-light: hsl(0, 0%, 99%);
+  --paragraph-lightColor: hsl(0, 0%, 29%);
+  --btn-background: hsl(0, 2%, 10%);
+  --h2DarkColor: hsl(0, 0%, 11%);
+  --h1DarkColor: hsl(0, 0%, 5%);
+  --textShadowDark: hsl(0, 1%, 33%);
+  --spanDarkColor: hsl(0, 0%, 18%);
+  --scrollDark: #666565;
   --background-image: url('../images/600.webp');
   --background-screen: url('../images/paper-flower-background-4881104_1920.webp');
   --main-image: url('../images/main-600.webp');
@@ -166,11 +166,6 @@ body main .main-title h2 {
 
 body main .main-title p {
   text-align: center;
-}
-
-body main .education .title h2 {
-  text-shadow: 1px 1px 0px #ff9c9c;
-  font-weight: 900;
 }
 
 body main .education .content {
