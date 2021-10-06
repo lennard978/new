@@ -4,30 +4,30 @@
   box-sizing: border-box;
 }
 body {
-  --global-dark: black;
-  --global-light: white;
-  --paragraph-lightColor: hsla(0, 0%, 30%, 0.9);
-  --btn-background: hsla(0, 0%, 99%, 0);
-  --h2DarkColor: hsl(0, 1%, 14%);
-  --h1DarkColor: hsl(0, 0%, 9%);
-  --textShadowDark: hsla(0, 0%, 0%, 0.8);
-  --spanDarkColor: hsla(0, 0%, 20%, 0.911);
-  --scrollDark: hsla(0, 0%, 20%, 0.395);
-  --background-image: url('../images/600.jpg');
-  --background-screen: url('../images/paper-flower-background-4881104_1920.jpg');
-  --main-image: url('../images/main-600.png');
+  --global-dark: #ec631ec9;
+  --global-light: #fcfcfc;
+  --paragraph-lightColor: #e55812;
+  --btn-background: #e55812;
+  --h2DarkColor: #e55812;
+  --h1DarkColor: #e55812;
+  --textShadowDark: #e55812;
+  --spanDarkColor: #e55812;
+  --scrollDark: #e55812;
+  --background-image: url('../images/600.webp');
+  --background-screen: url('../images/paper-flower-background-4881104_1920.webp');
+  --main-image: url('../images/main-600.webp');
 }
 
 body.dark-theme {
-  --global-dark: hsl(0, 20%, 99%);
-  --global-light: black;
-  --paragraph-lightColor: hsl(0, 0%, 99%);
-  --btn-background: hsl(0, 0%, 89%);
-  --h2DarkColor: hsl(0, 0%, 91%);
-  --h1DarkColor: hsl(0, 3%, 85%);
-  --shadow: white;
-  --spanDarkColor: white;
-  --scrollDark: white;
+  --global-dark: #2cb67d;
+  --global-light: #ffffff;
+  --paragraph-lightColor: #2cb67d;
+  --btn-background: #2cb67d;
+  --h2DarkColor: #2cb67d;
+  --h1DarkColor: #2cb67d;
+  --textShadowDark: #2cb67d;
+  --spanDarkColor: #2cb67d;
+  --scrollDark: #2cb67d;
   --background-image: black;
   --background-screen: black;
   --main-image: black;
@@ -71,6 +71,9 @@ body {
     position: fixed;
     z-index: -1; // this is optional
   }
+  hr {
+    color: var(--global-dark);
+  }
   header {
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
@@ -82,7 +85,7 @@ body {
       top: 10px;
       left: 10px;
       text-transform: capitalize;
-      color: var(--global-dark);
+      color: var(--h1DarkColor);
       font-weight: bolder;
     }
     p {
@@ -121,6 +124,7 @@ body {
 
   main {
     color: var(--global-dark);
+    padding-bottom: 40px;
     h2 {
       margin-left: 20px;
       padding: 5px 0;
@@ -337,6 +341,7 @@ body {
       color: var(--global-light);
       border-radius: 50%;
       padding: 5px;
+      cursor: pointer;
     }
     .fa-plus {
       margin-right: 20px;
@@ -345,6 +350,7 @@ body {
       color: var(--global-light);
       border-radius: 50%;
       padding: 5px;
+      cursor: pointer;
     }
   }
 

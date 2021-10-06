@@ -8,10 +8,10 @@ btn.addEventListener("click", function() {
   document.body.classList.toggle("dark-theme");
   if (body.classList.contains("dark-theme")) {
     btn.textContent = "light";
-    btn.style.color = "white";
+    btn.style.color = "#2cb67d";
   } else {
     btn.textContent = "dark";
-    btn.style.color = "black";
+    btn.style.color = "#e55812";
   }
 });
 
