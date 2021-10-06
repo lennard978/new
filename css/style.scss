@@ -599,9 +599,21 @@ body {
           max-height: 100vh;
           height: 100%;
           ul {
-            justify-content: center;
+            display: flex;
+            justify-content: space-evenly;
             align-items: center;
             height: 100%;
+            li {
+              a {
+                color: var(--global-dark);
+                font-weight: bolder;
+                transition: all 0.3s ease;
+                &:hover {
+                  color: var(--textShadowDark);
+                  color: orange;
+                }
+              }
+            }
           }
         }
       }
@@ -624,6 +636,26 @@ body {
         border-top: 3px solid var(--global-dark);
         .open {
           display: none;
+        }
+        .lang-list {
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          height: 120px;
+          li {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 0;
+            p {
+              display: block;
+              padding: 1px 20px;
+              color: var(--global-dark);
+              font-weight: bolder;
+              i {
+                color: var(--paragraph-lightColor);
+              }
+            }
+          }
         }
         .content {
           max-height: 100vh;
